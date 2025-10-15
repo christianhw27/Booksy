@@ -15,6 +15,10 @@ adalah sebuah platform perpustakaan digital yang dirancang untuk memberikan akse
 -   **👤 Fungsionalitas Pengguna**: Simulasi fitur pinjam buku ("My Books") dan "Wishlist".
 -   **🚀 Interaksi Dinamis**: Tombol "View All" untuk menampilkan lebih banyak buku dan kartu buku yang interaktif.
 
+![Booksy Screenshot](images/ss4.png) 
+![Booksy Screenshot](images/ss5.png) 
+![Booksy Screenshot](images/ss6.png) 
+
 ## 🛠️ Teknologi yang Digunakan
 
 -   **HTML5**: Untuk struktur dan konten halaman web.
