@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - Booksy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar-top">
+                <div class="nav-logo">
+                    <a href="#">Booksy</a>
+                </div>
+                <div class="search-bar">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" id="search-input" placeholder="Search by author or title">
+                </div>
+                <div class="nav-actions">
+                    <a href="mybooks.html" class="icon-btn" id="mybooks-icon" title="My Books">
+                     <span class="material-symbols-outlined">menu_book</span>
+                    </a>
+                     <a href="wishlist.html" class="icon-btn" id="wishlist-icon" title="Wishlist">
+                    <span class="material-symbols-outlined">favorite</span>
+                    </a>
+                    <button class="icon-btn" id="dark-mode-toggle" title="Toggle Dark Mode">
+                        <span class="material-symbols-outlined">dark_mode</span>
+                    </button>
+                </div>
+            </nav>
+        <nav class="navbar-bottom">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html" class="active">Catalog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+</div>
+    </header>
+
+    <main class="container">
+        <h1 class="page-title">Book Catalog</h1>
+
+        <section class="category-section">
+            <div class="section-header">
+                <h2>Novels & Literature</h2>
+            </div>
+            <div class="book-grid">
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Fiksi Sejarah</span>
+                            <a href="detail-laut-bercerita.html">
+                                <img src="https://cdn.gramedia.com/uploads/items/9786024246945_Laut-Bercerita.jpg" alt="Laut Bercerita">
+                            </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>Laut Bercerita</h3>
+                            <p>Leila S. Chudori</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Fiksi Kehidupan Kota</span>
+                            <a href="detail-seporsi-mie-ayam.html"> 
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/95ob5m98ur.jpg" alt="Seporsi Mie Ayam">
+                        </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>Seporsi Mie Ayam Sebelum Mati</h3>
+                            <p>Brian Khrisna</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Metropop</span>
+                            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646470594i/60129536.jpg" alt="Home Sweet Loan">
+                        </div>
+                        <div class="book-info">
+                            <h3>Home Sweet Loan</h3>
+                            <p>Almira Bastari</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Fiksi Romantis</span>
+                            <img src="https://cdn.gramedia.com/uploads/items/pulang-pergi_tere_liye.jpeg" alt="Pulang Pergi">
+                        </div>
+                        <div class="book-info">
+                            <h3>Pulang Pergi</h3>
+                            <p>Tere Liye</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Novel Romantis</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/img508_tsC4kHS.jpg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>Your Name</h3>
+                            <p>Makoto Shinkai</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Novel Misteri & Detektif</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786020637099_THE_CASE_BOOK_OF_SHERLOCK.jpg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>Koleksi Kasus Sherlock Holmes</h3>
+                            <p>Arthur Conan Doyle</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Fiksi Fantasi</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/picture_meta/2024/6/21/3847kgwiyhubaaragwwgrt.jpg" alt="solo leveling">
+                        </div>
+                        <div class="book-info">
+                            <h3>Solo Leveling 6</h3>
+                            <p>DUBU/CHUGONG</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Fiksi Misteri & Detektif</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/4v-x442kk1.jpg" alt="Hyouka">
+                        </div>
+                        <div class="book-info">
+                            <h3>Hyouka</h3>
+                            <p>Yonezawa Honobu</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <p class="no-results-message" style="display: none;">Tidak ada buku yang cocok dengan pencarian Anda.</p>
+            <div class="view-all-container">
+                <button class="btn-secondary view-all-btn">View All</button>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <div class="section-header">
+                <h2>Self Development</h2>
+            </div>
+            <div class="book-grid">
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Personal Growth</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/0i83anne6r.jpg" alt="kecerdasan emosional">
+                        </div>
+                        <div class="book-info">
+                           <h3>Kecerdasan Emosional</h3>
+                           <p>Daniel Goleman</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Personal Growth</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786020633176_.Atomic_Habit.jpg" alt="atomic habits">
+                        </div>
+                        <div class="book-info">
+                           <h3>Atomic Habits</h3>
+                           <p>James Clear</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Journaling</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/lza3vs7lzj.png" alt="96">
+                        </div>
+                        <div class="book-info">
+                           <h3>Slow Living Journal</h3>
+                           <p>Janeera Amba</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Emosi</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/product-metas/18fx2pn-0v.jpg" alt="the power of patience">
+                        </div>
+                        <div class="book-info">
+                           <h3>The Power of Patience</h3>
+                           <p>M.j. Ryan</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Motivasi</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/picture_meta/2024/5/29/qmr2otmevxvjfecpjkwhu7.jpg" alt="the power of positive habits">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Power of Positive Habits</h3>
+                            <p>Finaang</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Komunikasi</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/picture_meta/2023/3/3/ahyxay2mdz7bcsu3idbqru.jpg" alt="social intelligence">
+                        </div>
+                        <div class="book-info">
+                            <h3>Social Intelligence</h3>
+                            <p>Daniel Goleman</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Sukses</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/product-metas/2fvc-45-sb.jpg" alt="succesful habits">
+                        </div>
+                        <div class="book-info">
+                            <h3>Succesful Habits</h3>
+                            <p>Aisyah Nafiani</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Journaling</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/5-5-me-19c.jpg" alt="life reset">
+                        </div>
+                        <div class="book-info">
+                            <h3>Life Reset</h3>
+                            <p>Senja Rindiani</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <p class="no-results-message" style="display: none;">Tidak ada buku yang cocok dengan pencarian Anda.</p>
+            <div class="view-all-container">
+                <button class="btn-secondary view-all-btn">View All</button>
+            </div>
+        </section>
+        
+        <section class="category-section">
+            <div class="section-header">
+                <h2>Comic</h2>
+            </div>
+            <div class="book-grid">
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Manga</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/Cover_Depan_Jujutsu_Kaisen_0.jpg" alt="96">
+                        </div>
+                        <div class="book-info">
+                           <h3>Jujutsu Kaisen 0</h3>
+                           <p>Gege Akutami</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Manga</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/3--an61s-k.jpg" alt="96">
+                        </div>
+                        <div class="book-info">
+                           <h3>Chainsaw Man 10</h3>
+                           <p>Fujimoto Tatsuki</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Komedi</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786026714671_SI_JUKI_SERIES_VOL_1_FA.jpg" alt="96">
+                        </div>
+                        <div class="book-info">
+                           <h3>Si Juki Anak Kosan #1</h3>
+                           <p>Faza Meonk</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Kejahatan & Misteri</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/product-metas/i2n-3ck0n6.jpg" alt="96">
+                        </div>
+                        <div class="book-info">
+                           <h3>Panji Tengkorak</h3>
+                           <p>Hans Jaladara</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Manga</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786230025334_Spy_x_Family_03.jpg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>Spy X Family 03</h3>
+                            <p>Endo Tatsuya</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Manga</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/One_Piece_99.jpeg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>One Piece 99</h3>
+                            <p>Eiichiro Oda</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Fantasi</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/picture_meta/2023/3/1/hvbn3cac5emmrv3uzdhgrj.jpg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>Virgo and The Sparklings</h3>
+                            <p>Annisa Nisfihani dan Ellie Goh</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Aksi</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/cover_GUNDALA_SON_OF_LIGHTNING_1.jpg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>Gundala Son of Lightning 1</h3>
+                            <p>Andy Wijaya</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <p class="no-results-message" style="display: none;">Tidak ada buku yang cocok dengan pencarian Anda.</p>
+            <div class="view-all-container">
+                <button class="btn-secondary view-all-btn">View All</button>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <div class="section-header">
+                <h2>Filsafat</h2>
+            </div>
+            <div class="book-grid">
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Filsafat</span>
+                            <a href="detail-madilog.html">
+                                <img src="images/madilog.jpeg" alt="madilog">
+                            </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>Madilog</h3>
+                            <p>Tan Malaka</p>
+                            <div class="rating"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+                        </div>
+                    </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Filsafat</span>
+                            <img src="https://www.gramedia.com/blog/content/images/2022/06/Filosofi-Teras.jpg" alt="Filosofi Teras">
+                        </div>
+                        <div class="book-info">
+                            <h3>Filosofi Teras</h3>
+                            <p>Henry Manampiring</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Novel Filsafat</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/97897943384212_Dunia-Anna.jpg" alt="96">
+                        </div>
+                        <div class="book-info">
+                           <h3>Dunia Anna</h3>
+                           <p>Jostein Gaarder</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                           <span class="tag">Filsafat</span>
+                           <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/product-metas/ik-tsg6a2o.png" alt="96">
+                        </div>
+                        <div class="book-info">
+                           <h3>Philosophy 101</h3>
+                           <p>Paul Kleinman</p>
+                           <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+                           </div>
+                        </div>
+                     </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Novel Filsafat</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786024410209_dunia-sophie-republish.jpg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>Dunia Sophie</h3>
+                            <p>Jostein Gaarder</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Filsafat</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/ux0r98x5v9.jpg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Republic</h3>
+                            <p>Plato</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Filsafat</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/items/9786236699577.jpg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>The Problems of Philosophy</h3>
+                            <p>Bertrand Russell</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="book-card hidden-book">
+                        <div class="book-cover">
+                            <span class="tag">Filsafat</span>
+                            <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/i2tiz2a463.jpeg" alt="ALTER">
+                        </div>
+                        <div class="book-info">
+                            <h3>Meditation</h3>
+                            <p>Marcus Aurelius</p>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <p class="no-results-message" style="display: none;">Tidak ada buku yang cocok dengan pencarian Anda.</p>
+            <div class="view-all-container">
+                <button class="btn-secondary view-all-btn">View All</button>
+            </div>
+        </section>
+
+    </main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>Booksy</h2>
+      <p>Your digital library for free & legal ebooks.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@booksy.com</p>
+      <p>Phone: +62 812-3456-7890</p>
+    </div>
+
+    <div class="footer-social">
+          <h3>Follow Us</h3>
+                <div class="social-icons">
+                <a href="https://www.instagram.com/booksy.qa/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/BooksyApp/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@booksybiz?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+          </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Booksy. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

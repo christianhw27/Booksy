@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Buku: Madilog - Booksy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+        <header>
+        <div class="container">
+            <nav class="navbar-top">
+                <div class="nav-logo">
+                    <a href="#">Booksy</a>
+                </div>
+                <div class="search-bar">
+                    <span class="material-symbols-outlined">search</span>
+                    <input type="text" id="search-input" placeholder="Search by author or title">
+                </div>
+                <div class="nav-actions">
+                    <a href="mybooks.html" class="icon-btn" id="mybooks-icon" title="My Books">
+                     <span class="material-symbols-outlined">menu_book</span>
+                    </a>
+                     <a href="wishlist.html" class="icon-btn" id="wishlist-icon" title="Wishlist">
+                    <span class="material-symbols-outlined">favorite</span>
+                    </a>
+                    <button class="icon-btn" id="dark-mode-toggle" title="Toggle Dark Mode">
+                        <span class="material-symbols-outlined">dark_mode</span>
+                    </button>
+                </div>
+            </nav>
+            <nav class="navbar-bottom">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catalog.html">Catalog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="container">
+        <div class="book-detail-container">
+
+            <div class="book-detail-cover">
+                <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/products/95ob5m98ur.jpg" alt="Cover Buku Seporsi Mie Ayam">
+            </div>
+
+            <div class="book-detail-info">
+                <h1 class="book-title">Seporsi Mie Ayam Sebelum Mati</h1>
+                <p class="author">oleh Brian Khrisna</p>
+                <div class="rating">
+                    <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                </div>
+
+                <ul class="book-meta">
+                    <li><span>Genre:</span> Fiksi Kehidupan Kota</li>
+                    <li><span>Penerbit:</span> Gramedia Widiasarana Indonesia</li>
+                    <li><span>Tahun Terbit:</span> 2025</li>
+                    <li><span>Jumlah Halaman:</span> 216</li>
+                </ul>
+
+                <h2 class="section-subtitle">Sinopsis</h2>
+                <p class="synopsis">
+                    Novel ini menceritakan tentang Ale, laki-laki berusia 37 tahun yang didiagnosa mengidap depresi akut dan ingin mengakhiri hidupnya. Ale merasa tak pernah bisa memilih sesuatu atas kehendaknya sendiri. Namun sebelum mati, ia ingin makan seporsi mie ayam terakhirnya, setidaknya itu adalah keputusan yang ia ambil atas kehendaknya sendiri.
+                </p>
+
+                <div class="book-actions">
+                    <button id="borrow-btn" class="btn-primary btn-large">Pinjam Buku</button>
+                    <button id="add-wishlist-btn" class="btn-icon-action">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span>Tambah ke Wishlist</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <section class="recommendations">
+            <h2 class="section-title-center">Rekomendasi Lainnya</h2>
+            <div class="book-grid">
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Fiksi Kehidupan Kota</span>
+                            <a href="detail-seporsi-mie-ayam.html">
+                                <img src="https://www.gramedia.com/blog/content/images/2025/01/Sisi-Tergelap-Surga.png" alt="sisi tergelap surga">
+                            </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>Sisi Tergelap Surga</h3>
+                            <p>Brian Khrisna</p>
+                            <div class="rating"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+                        </div>
+                    </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Fiksi Romantis</span>
+                            <a href="detail-seporsi-mie-ayam.html">
+                                <img src="https://www.gramedia.com/blog/content/images/2025/01/Bandung-Menjelang-Pagi.png" alt="bandung menjelang pagi">
+                            </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>Bandung Menjelang Pagi</h3>
+                            <p>Brian Khrisna</p>
+                            <div class="rating"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+                        </div>
+                    </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Fiksi Fantasi</span>
+                            <a href="detail-seporsi-mie-ayam.html">
+                                <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/picture_meta/2023/2/6/bcekrdxnwcemqhgkreithj.jpg" alt="selena">
+                            </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>Selena</h3>
+                            <p>Tere Liye</p>
+                            <div class="rating"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+                        </div>
+                    </div>
+                <div class="book-card">
+                        <div class="book-cover">
+                            <span class="tag">Fiksi Fantasi</span>
+                            <a href="detail-seporsi-mie-ayam.html">
+                                <img src="https://image.gramedia.net/rs:fit:0:0/plain/https://cdn.gramedia.com/uploads/picture_meta/2023/6/10/3rqshdjjq6rvpxfczrefl8.jpg" alt="nebula">
+                            </a>
+                        </div>
+                        <div class="book-info">
+                            <h3>Nebula</h3>
+                            <p>Tere Liye</p>
+                            <div class="rating"><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span></div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>Booksy</h2>
+      <p>Your digital library for free & legal ebooks.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@booksy.com</p>
+      <p>Phone: +62 812-3456-7890</p>
+    </div>
+
+    <div class="footer-social">
+          <h3>Follow Us</h3>
+                <div class="social-icons">
+                <a href="https://www.instagram.com/booksy.qa/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/BooksyApp/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.tiktok.com/@booksybiz?is_from_webapp=1&sender_device=pc"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+          </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Booksy. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
