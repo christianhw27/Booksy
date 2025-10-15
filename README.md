@@ -1,4 +1,6 @@
-![Booksy Screenshot](images/screenshot.png) Booksy adalah sebuah platform perpustakaan digital yang dirancang untuk memberikan akses mudah dan legal terhadap berbagai koleksi buku. Pengguna dapat menjelajahi katalog, meminjam buku, membuat daftar keinginan (wishlist), dan menikmati pengalaman membaca yang nyaman dengan antarmuka yang bersih dan responsif.
+![Booksy Screenshot](images/ss1.png) 
+##Booksy## 
+adalah sebuah platform perpustakaan digital yang dirancang untuk memberikan akses mudah dan legal terhadap berbagai koleksi buku. Pengguna dapat menjelajahi katalog, meminjam buku, membuat daftar keinginan (wishlist), dan menikmati pengalaman membaca yang nyaman dengan antarmuka yang bersih dan responsif.
 
 ## ✨ Fitur Utama
 
