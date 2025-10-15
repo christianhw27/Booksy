@@ -204,10 +204,11 @@ File `script.js` mengontrol semua interaktivitas di website. Script dieksekusi s
     -   Script juga menambahkan fungsi `alert()` sederhana sebagai placeholder untuk tombol "Pinjam Buku" dan "Tambah ke Wishlist".
     -   Untuk form kontak, `event.preventDefault()` digunakan pada event `submit` untuk mencegah halaman me-reload, lalu menampilkan `alert` sebagai konfirmasi.
 
-## 📜 Lisensi
+## 👥 Tim Pengembang
 
-Proyek ini dilisensikan di bawah Lisensi MIT.
+Proyek ini dibuat oleh tim yang terdiri dari 3 mahasiswa program studi **D4 Manajemen Informatika, Universitas Negeri Surabaya**:
 
----
+* **[Danny Christian Hermawan]** - `[24091397056]` 
+* **[Cesya Aulia Ramadhani]** - `[24091397121]` 
+* **[Hanifah Kurnia Fa'Izah]** - `[24091397124]` 
 
-Dibuat dengan ❤️ oleh [Nama Kamu](https://github.com/nama-user-kamu)
