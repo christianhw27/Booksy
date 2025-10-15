@@ -208,7 +208,7 @@ File `script.js` mengontrol semua interaktivitas di website. Script dieksekusi s
 
 Proyek ini dibuat oleh tim yang terdiri dari 3 mahasiswa program studi **D4 Manajemen Informatika, Universitas Negeri Surabaya**:
 
-* **[Danny Christian Hermawan]** - `[24091397056]` 
-* **[Cesya Aulia Ramadhani]** - `[24091397121]` 
-* **[Hanifah Kurnia Fa'Izah]** - `[24091397124]` 
+* **Danny Christian Hermawan** - `[24091397056]` 
+* **Cesya Aulia Ramadhani** - `[24091397121]` 
+* **Hanifah Kurnia Fa'Izah** - `[24091397124]` 
 
