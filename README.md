@@ -107,7 +107,7 @@ File `script.js` mengontrol semua interaktivitas di website. Script dieksekusi s
 
 ## 👥 Tim Pengembang
 
-Proyek ini dibuat oleh tim yang terdiri dari 3 mahasiswa program studi **D4 Manajemen Informatika, Universitas Negeri Surabaya**:
+Proyek ini disusun oleh **Kelompok 3 Kelas 2024I**, beranggotakan tiga mahasiswa **D4 Manajemen Informatika**, **Universitas Negeri Surabaya**.
 
 * **Danny Christian Hermawan** - `[24091397056]` 
 * **Cesya Aulia Ramadhani** - `[24091397121]` 
