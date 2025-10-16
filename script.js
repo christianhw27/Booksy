@@ -59,14 +59,13 @@ document.addEventListener('DOMContentLoaded', function() {
 const viewAllButtons = document.querySelectorAll('.view-all-btn');
 viewAllButtons.forEach(button => {
     button.addEventListener('click', function() {
-        const parentSection = this.closest('.popular-section, .category-section'); 
+        const parentSection = this.closest('.category-section, .popular-section');
         if (parentSection) {
             const hiddenBooks = parentSection.querySelectorAll('.book-card.hidden-book');
             hiddenBooks.forEach(book => {
-                book.classList.remove('hidden-book');  // buka kunci view all
-                book.style.display = 'block';          // pastikan kelihatan
+                book.classList.remove('hidden-book');
             });
-            this.style.display = 'none'; // sembunyikan tombol setelah dipakai
+            this.style.display = 'none'; // Sembunyikan tombol setelah diklik
         }
     });
 });
@@ -76,29 +75,27 @@ const searchInput = document.getElementById('search-input');
 if (searchInput) {
     searchInput.addEventListener('keyup', function() {
         const searchQuery = searchInput.value.toLowerCase().trim();
-        const allBooks = document.querySelectorAll('.book-card'); 
-        const noResultsMessage = document.querySelector('.no-results-message');
-        let visibleBookCount = 0;
+        const allSections = document.querySelectorAll('.category-section'); 
+        // asumsi tiap kategori dibungkus div .category-section
 
-        allBooks.forEach(book => {
-            const title = book.querySelector('.book-info h3')?.textContent.toLowerCase() || '';
-            const author = book.querySelector('.book-info p')?.textContent.toLowerCase() || '';
-            const genre = book.querySelector('.book-cover .tag')?.textContent.toLowerCase() || '';
+        allSections.forEach(section => {
+            const bookGrid = section.querySelector('.book-grid');
+            const allBooks = bookGrid.querySelectorAll('.book-card');
+            const noResultsMessage = section.querySelector('.no-results-message');
+            let visibleBookCount = 0;
 
-            if (title.includes(searchQuery) || author.includes(searchQuery) || genre.includes(searchQuery)) {
-                book.style.display = 'block';
-                visibleBookCount++;
-            } else {
-                book.style.display = 'none';
-            }
-        });
+            allBooks.forEach(book => {
+                const title = book.querySelector('.book-info h3')?.textContent.toLowerCase() || '';
+                const author = book.querySelector('.book-info p')?.textContent.toLowerCase() || '';
+                const genre = book.querySelector('.book-cover .tag')?.textContent.toLowerCase() || '';
 
-        if (noResultsMessage) {
-            noResultsMessage.style.display = visibleBookCount > 0 ? 'none' : 'block';
-        }
-    });
-}
-
+                if (title.includes(searchQuery) || author.includes(searchQuery) || genre.includes(searchQuery)) {
+                    book.style.display = 'block';
+                    visibleBookCount++;
+                } else {
+                    book.style.display = 'none';
+                }
+            });
 
             // kontrol pesan untuk kategori ini aja
             if (noResultsMessage) {
@@ -129,7 +126,4 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     this.reset();
 });
 
-
         
-
-
