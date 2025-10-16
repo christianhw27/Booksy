@@ -76,26 +76,28 @@ if (searchInput) {
     searchInput.addEventListener('keyup', function() {
         const searchQuery = searchInput.value.toLowerCase().trim();
         const allBooks = document.querySelectorAll('.book-card'); 
-        // asumsi tiap kategori dibungkus div .category-section
+        const noResultsMessage = document.querySelector('.no-results-message');
+        let visibleBookCount = 0;
 
-        allSections.forEach(section => {
-            const bookGrid = section.querySelector('.book-grid');
-            const allBooks = bookGrid.querySelectorAll('.book-card');
-            const noResultsMessage = section.querySelector('.no-results-message');
-            let visibleBookCount = 0;
+        allBooks.forEach(book => {
+            const title = book.querySelector('.book-info h3')?.textContent.toLowerCase() || '';
+            const author = book.querySelector('.book-info p')?.textContent.toLowerCase() || '';
+            const genre = book.querySelector('.book-cover .tag')?.textContent.toLowerCase() || '';
 
-            allBooks.forEach(book => {
-                const title = book.querySelector('.book-info h3')?.textContent.toLowerCase() || '';
-                const author = book.querySelector('.book-info p')?.textContent.toLowerCase() || '';
-                const genre = book.querySelector('.book-cover .tag')?.textContent.toLowerCase() || '';
+            if (title.includes(searchQuery) || author.includes(searchQuery) || genre.includes(searchQuery)) {
+                book.style.display = 'block';
+                visibleBookCount++;
+            } else {
+                book.style.display = 'none';
+            }
+        });
 
-                if (title.includes(searchQuery) || author.includes(searchQuery) || genre.includes(searchQuery)) {
-                    book.style.display = 'block';
-                    visibleBookCount++;
-                } else {
-                    book.style.display = 'none';
-                }
-            });
+        if (noResultsMessage) {
+            noResultsMessage.style.display = visibleBookCount > 0 ? 'none' : 'block';
+        }
+    });
+}
+
 
             // kontrol pesan untuk kategori ini aja
             if (noResultsMessage) {
@@ -128,3 +130,4 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 
 
         
+
