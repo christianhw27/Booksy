@@ -64,6 +64,7 @@ viewAllButtons.forEach(button => {
             const hiddenBooks = parentSection.querySelectorAll('.book-card.hidden-book');
             hiddenBooks.forEach(book => {
                 book.classList.remove('hidden-book');
+                book.style.display = 'block';
             });
             this.style.display = 'none'; // Sembunyikan tombol setelah diklik
         }
@@ -127,3 +128,4 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 });
 
         
+
