@@ -59,13 +59,14 @@ document.addEventListener('DOMContentLoaded', function() {
 const viewAllButtons = document.querySelectorAll('.view-all-btn');
 viewAllButtons.forEach(button => {
     button.addEventListener('click', function() {
-        const parentSection = this.closest('.category-section, .popular-section');
+        const parentSection = this.closest('.popular-section, .category-section'); 
         if (parentSection) {
             const hiddenBooks = parentSection.querySelectorAll('.book-card.hidden-book');
             hiddenBooks.forEach(book => {
-                book.classList.remove('hidden-book');
+                book.classList.remove('hidden-book');  // buka kunci view all
+                book.style.display = 'block';          // pastikan kelihatan
             });
-            this.style.display = 'none'; // Sembunyikan tombol setelah diklik
+            this.style.display = 'none'; // sembunyikan tombol setelah dipakai
         }
     });
 });
@@ -130,4 +131,5 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 
 
         
+
 
