@@ -75,7 +75,7 @@ const searchInput = document.getElementById('search-input');
 if (searchInput) {
     searchInput.addEventListener('keyup', function() {
         const searchQuery = searchInput.value.toLowerCase().trim();
-        const allSections = document.querySelectorAll('.category-section'); 
+        const allBooks = document.querySelectorAll('.book-card'); 
         // asumsi tiap kategori dibungkus div .category-section
 
         allSections.forEach(section => {
@@ -125,5 +125,6 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     alert('Thank you! Your message has been received.');
     this.reset();
 });
+
 
         
